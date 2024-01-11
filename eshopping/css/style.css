@@ -9,6 +9,7 @@ body{
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+    margin-bottom: 5%;
 }
 
 .header a{
@@ -45,3 +46,24 @@ body{
     margin-right: 1%;
 }
 
+.images{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.images img{
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.images_vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
