@@ -79,8 +79,6 @@ body{
     gap: 10px;
 }
 
-/* Ajoutez ceci à la fin de votre fichier style.css existant */
-
 .ellipse {
   width: 37px;
   height: 37px;
@@ -88,12 +86,12 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 16px; /* Espacement entre les cercles */
+  margin-right: 16px;
 }
 
 #ellipse1 {
   background-color: rgba(79,70,49,1);
-  position: relative; /* Pour positionner le checkmark par rapport à cet élément */
+  position: relative;
 }
 
 #ellipse2 {
@@ -102,19 +100,18 @@ body{
 
 #ellipse3 {
   background-color: rgba(49, 52, 79, 1);
-  margin-right: 0; /* Le dernier élément n'a pas de marge droite */
+  margin-right: 0;
 }
 
 .checkmark-frame {
   width: 16px;
   height: 16px;
-  position: absolute; /* Position absolue par rapport à #ellipse1 */
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centre le cadre */
+  transform: translate(-50%, -50%); 
 }
 
-/* Insérez l'icône de vérification ou une autre image avec la classe checkmark ici. Par exemple: */
 .checkmark-frame::before {
     content: "";
     display: inline-block;
