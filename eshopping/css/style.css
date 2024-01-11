@@ -59,6 +59,13 @@ body{
     margin-bottom: 10px;
 }
 
+.images p{
+    color: rgba(0, 0, 0, 0.60);
+    color: color(display-p3 0 0 0 / 0.60);
+
+
+}
+
 .images_vertical{
     display: flex;
     flex-direction: column;
