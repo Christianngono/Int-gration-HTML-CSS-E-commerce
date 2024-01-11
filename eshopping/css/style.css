@@ -19,14 +19,29 @@ body{
     flex-direction: row;
     cursor: pointer;
     
-}
+} 
 
-.center{
-    justify-content: center;
-}   
-
-.search{
+.Search{
     border-radius: 62px;
     background: #F0F0F0;
-    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+    
 }
+ 
+#message{
+    margin-right: 15%;
+    width: 516px;;
+}   
+
+#loop{
+    margin-left: 1%;
+}
+
+#connexion{
+    margin-right: 1%;
+}
+
