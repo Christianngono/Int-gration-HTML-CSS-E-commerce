@@ -1,0 +1,32 @@
+body{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.header a{
+    text-decoration: none;
+    border: none;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    
+}
+
+.center{
+    justify-content: center;
+}   
+
+.search{
+    border-radius: 62px;
+    background: #F0F0F0;
+    align-items: flex-start;
+}
