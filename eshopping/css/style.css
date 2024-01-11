@@ -138,3 +138,29 @@ body{
     cursor: pointer;
 
 }
+
+#price_bef{
+    color: rgba(0, 0, 0, 0.30);
+    color: color(display-p3 0 0 0 / 0.30);
+    text-decoration-line: line-through;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.notes{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 1%;
+}
