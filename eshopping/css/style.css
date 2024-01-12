@@ -273,13 +273,12 @@ img{
     padding: 28px 16px;
     align-items: flex-start;
     align-content: flex-start;
-    gap: 24px 342px;
+    gap: 2%;
     flex-wrap: wrap;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.10);
     border: 1px solid color(display-p3 0 0 0 / 0.10);
     align-items: center;
-    gap: 24px; 
 }
 
 .star-rating span {
@@ -319,6 +318,12 @@ img{
     
 }
 
+.allreview{
+display: grid;
+grid-template-columns:repeat(2, 1fr);
+gap: 2%;
+}
+
 
 @media only screen and (max-width: 845px) {
     body{
@@ -336,4 +341,31 @@ img{
     div.images{
         display: grid;
     }
+}
+@media (max-width: 768px) {
+    .allreview{
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        gap: 2%;
+    }
+    .tshirt-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .large-tshirt {
+        order: 1;
+    }
+
+    .small-tshirt {
+        order: 2;
+    }
+
+    h1 {
+        padding-top: 10%;
+    }
+    
+    .notes{
+        padding-top: 10%;}
+    
 }
