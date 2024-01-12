@@ -7,7 +7,7 @@ body{
 }
 
 img{
-    max-width: 100%;
+    max-width: auto;
     height: auto;
 }
 
@@ -17,7 +17,7 @@ img{
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 }
 
 .header a{
@@ -56,12 +56,14 @@ img{
 
 .images{
     display: flex;
-    gap: 1% ;
+    gap: 2%;
+    width: auto;
+    height: auto;
 }
 
 .images img{
     margin-right: 10px;
-    margin-bottom: 1px;
+    margin-bottom: 2%;
     
 }
 
@@ -76,17 +78,18 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 0,5%;
+    gap: 2%;
 }
 
 .images_vertical img{
     border-radius: 20px;
 }
+
 .size-selector {
     display: flex;
     flex-direction: column;
     align-items: left;
+    gap: auto;
 }
 
 .button-group {
@@ -184,23 +187,28 @@ img{
 .content{
    display: flex;
    justify-content: space-between;
-   gap: 2,78%;
+   gap: 2%;
 }
 
+.description{
+    display: flex;
+    flex-direction: column;
+}
 
 .description h1{
     margin: 0;
-
 }
 
 
 .quantity-selector {
     display: flex;
     background: color(display-p3 0.94 0.94 0.94);
-    padding: 12px 16px;
+    padding: 1px 16px;
     border-radius: 62px;
     gap: 25px ;
     width: 100px;
+    display: flex;
+    align-items: center;
 }
  
 .increment-button {
@@ -218,9 +226,9 @@ img{
  
 #add-to-cart-button {
     display: flex;
-    width: 400px;
+    width: auto;
     height: 52px;
-    padding: 16px 54px;
+    padding: 16px 100px;
     justify-content: center;
     align-items: center;
     gap: 12px;
@@ -240,6 +248,23 @@ img{
  
 #add-to-cart-button button:hover {
     opacity: 0.9;
+}
+
+.barre{
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.10);
+    background: color(display-p3 0 0 0 / 0.10); 
+    margin-bottom: 2% ;
+}
+
+.barre2{
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.10);
+    background: color(display-p3 0 0 0 / 0.10);
+    margin-bottom: 2% ;
+    margin-top: 2%;
 }
 
 @media only screen and (max-width: 845px) {
