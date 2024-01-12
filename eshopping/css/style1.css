@@ -1,8 +1,15 @@
+body {
+    margin-top: 35px;
+    margin-bottom: 77.42px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 header {
     display: inline-flex;
     flex-direction: row; /* Change la direction de la flexbox pour placer le bouton à droite */
     align-items: center;
-    gap: 908px;
+    gap: 1050px;
     color: white;
 }
 
@@ -21,7 +28,7 @@ header h2 {
     color: #FFF;
     display: flex;
     font-family: Arial;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight:900;
     line-height: normal;
@@ -43,7 +50,9 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px; 
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+    
 }
 
 .comments {
@@ -58,7 +67,6 @@ section {
     border: 1px solid color(display-p3 0 0 0 / 0.10);
     width: 610px;
     padding: 28px 32px;
-    gap: 20px;
 }
 
 .names{
