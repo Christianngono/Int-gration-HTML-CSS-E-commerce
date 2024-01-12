@@ -146,6 +146,7 @@ img{
 }
 
 .size-button{
+    display: flex;
     border-radius: 20px;
     text-decoration: none;
     border: none;
@@ -439,6 +440,8 @@ hr{
     .barre2{
         margin-top: 5%;
         margin-bottom: 5%;
+        width: 85%;
+        margin-left: 0%;
     }
 
     .quantity-selector{
@@ -460,4 +463,11 @@ hr{
     #descript{
         margin-right: 12%;
     }
+
+    .button-group button {
+        width: 19%;
+        text-align: center;
+    }
+
+
 }
