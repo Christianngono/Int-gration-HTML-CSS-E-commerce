@@ -324,6 +324,37 @@ grid-template-columns:repeat(2, 1fr);
 gap: 2%;
 }
 
+.reviewbar{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.reviewbar h1{
+    font-weight: 700;
+    width: auto;
+}
+
+.reviewbar button{
+    display: flex;
+    width: auto;
+    height: 48px;
+    padding: 16px 20px;
+    align-items: center;
+    border-radius: 62px;
+    background: #1F59ED;
+    color: #FFF;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+
 
 @media only screen and (max-width: 845px) {
     body{
