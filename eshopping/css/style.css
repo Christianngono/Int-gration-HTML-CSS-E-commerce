@@ -356,9 +356,16 @@ gap: 2%;
 }
 
 
-@media only screen and (max-width: 845px) {
+@media (max-width: 768px) {
     body{
         align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        width: auto;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
     }
     div.content{
         flex-wrap: wrap;
@@ -372,8 +379,6 @@ gap: 2%;
     div.images{
         display: grid;
     }
-}
-@media (max-width: 768px) {
     .allreview{
         display: grid;
         grid-template-columns:repeat(1, 1fr);
@@ -384,12 +389,20 @@ gap: 2%;
         flex-direction: column;
     }
 
-    .large-tshirt {
+    .images_horizontal {
+        margin-left: auto;
+        margin-right: auto;
         order: 1;
+        width: 85%;
     }
 
-    .small-tshirt {
+    .images_vertical {
         order: 2;
+        width: 31%;
+    } 
+
+    .images_horizontal img{
+        border-radius: 20px
     }
 
     h1 {
