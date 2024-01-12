@@ -330,4 +330,12 @@ img{
         flex-wrap: wrap;
         align-items: center;
     }
+    div.images_vertical{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    div.images{
+        display: grid;
+    }
 }
