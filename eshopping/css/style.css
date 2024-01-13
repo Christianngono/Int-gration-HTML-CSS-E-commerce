@@ -228,12 +228,12 @@ img{
     display: flex;
     width: auto;
     height: 52px;
-    padding: 1px 13%;
     justify-content: center;
     align-items: center;
     border-radius: 62px;
     background: #1F59ED;
     cursor: pointer;
+    width: 100%;
 }
 
 .add button{
@@ -486,4 +486,20 @@ hr{
     }
 
 
+}
+
+@media (max-width: 1100px) {
+    body{
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        width: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        justify-content: center;
+    }
+    .content{
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }
