@@ -101,6 +101,7 @@ img{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    font-weight: 900;
 }
 
 .ellipse {
@@ -155,6 +156,7 @@ img{
     justify-content: center;
     align-items: center;
     gap: 12px;
+    font-weight: 400;
 }
 
 .size-button:hover{
@@ -241,7 +243,7 @@ img{
     cursor: pointer;
     color: #FFF;
     font-size: 14px;
-    font-weight: 900;
+    font-weight: 400;
     border: none;
     white-space: nowrap;
 }
@@ -336,12 +338,13 @@ gap: 2%;
     margin-top: 5%;
     margin-bottom: 2%;
     align-items: center;
-    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .reviewbar h1{
     font-weight: 700;
     width: auto;
+    
 }
 
 .reviewbar button{
@@ -469,9 +472,17 @@ hr{
     }
 
     .buy {
-        width: 0%;
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        margin-right: 13%;
+    }
+
+    .add, .quantity-selector {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        flex-grow: 1;
+
     }
 
     .size-button:hover{
@@ -485,6 +496,37 @@ hr{
         width: 5%;
     }
 
+    #with_border{
+        border: 1px black solid;
+    }
+
+    .description h1{
+        margin-top: 5%;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .reviewbar{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        margin-bottom: 10%;
+        margin-top: 15%;
+        
+    }
+
+    .reviewbar button{
+        margin-top: 10%;
+        font-size: 100%;
+        margin-right: none; 
+        font-weight: 500;
+    }
+
+    .reviewbar h1 {
+        width: auto;
+        font-size: 100%;
+        font-weight: 700;
+    }
 
 }
 
@@ -494,8 +536,6 @@ hr{
         align-content: center;
         flex-wrap: wrap;
         width: auto;
-        margin-left: 10%;
-        margin-right: 10%;
         justify-content: center;
     }
     .content{
