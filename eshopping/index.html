@@ -1,406 +1,272 @@
-<!-- Déclaration du type de document HTML -->
 <!DOCTYPE html>
-
-<!-- Balise HTML avec attribut de langue défini sur 'en' (anglais) -->
 <html lang="en">
-
-<!-- Section d'en-tête avec les métadonnées, y compris le jeu de caractères et le titre de la page -->
 <head>
-    <!-- Balise meta pour définir le jeu de caractères -->
     <meta charset="UTF-8">
-    
-    <!-- Balise title pour définir le titre de la page -->
     <title>Shop.co</title>
-
-    <!-- Balise link pour lier la feuille de style externe -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
-<!-- Section du corps de la page web -->
 <body> 
-    <!-- En-tête de la page contenant le logo et les liens de navigation -->
     <header>
-        <!-- Div avec la classe "header" pour regrouper les éléments de l'en-tête -->
     <div class="header">
-        
-        <svg id="burger" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-        </svg>
-        <!-- Titre principal du site -->
-        <h1>SHOP.CO</h1>
-        <a id="nodisplay">Shop
-            <!-- Icône SVG pour indiquer un lien -->
-        <!-- Début de l'élément SVG qui représente une icône -->
+     <h1 >SHOP.CO</h1>
+        <a>Shop
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <!-- Le chemin de l'icône est défini ici -->
             <path d="M13.5306 6.53061L8.5306 11.5306C8.46092 11.6005 8.37813 11.656 8.28696 11.6939C8.1958 11.7317 8.09806 11.7512 7.99935 11.7512C7.90064 11.7512 7.8029 11.7317 7.71173 11.6939C7.62057 11.656 7.53778 11.6005 7.4681 11.5306L2.4681 6.53061C2.3272 6.38972 2.24805 6.19862 2.24805 5.99936C2.24805 5.80011 2.3272 5.60901 2.4681 5.46811C2.60899 5.32722 2.80009 5.24806 2.99935 5.24806C3.19861 5.24806 3.3897 5.32722 3.5306 5.46811L7.99997 9.93749L12.4693 5.46749C12.6102 5.32659 12.8013 5.24744 13.0006 5.24744C13.1999 5.24744 13.391 5.32659 13.5318 5.46749C13.6727 5.60838 13.7519 5.79948 13.7519 5.99874C13.7519 6.198 13.6727 6.38909 13.5318 6.52999L13.5306 6.53061Z" fill="black" style="fill:black;fill-opacity:1;"/>
         </svg> 
         </a>
-        <!-- Lien vers la page "On Sale" -->
-        <a id="nodisplay">On Sale</a>
-        <!-- Lien vers la page "New arrivals" -->
-        <a id="nodisplay">New arrivals</a>
-        <!-- Lien vers la page "Brands" -->
-        <a id="nodisplay">Brands</a>
-        <!-- Début du conteneur de recherche -->
+        <a>On Sale</a>
+        <a>New arrivals</a>
+        <a>Brands</a>
         <div class="Search">
             <svg id="loop" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <!-- Début du chemin de l'icône de recherche -->
                 <path d="M21.7959 20.2041L17.3437 15.75C18.6787 14.0104 19.3019 11.8282 19.087 9.64606C18.8722 7.46389 17.8353 5.44515 16.1867 3.99936C14.5382 2.55356 12.4014 1.78898 10.2098 1.8607C8.01829 1.93243 5.93607 2.83509 4.38558 4.38558C2.83509 5.93607 1.93243 8.01829 1.8607 10.2098C1.78898 12.4014 2.55356 14.5382 3.99936 16.1867C5.44515 17.8353 7.46389 18.8722 9.64606 19.087C11.8282 19.3019 14.0104 18.6787 15.75 17.3437L20.2059 21.8006C20.3106 21.9053 20.4348 21.9883 20.5715 22.0449C20.7083 22.1015 20.8548 22.1307 21.0028 22.1307C21.1508 22.1307 21.2973 22.1015 21.4341 22.0449C21.5708 21.9883 21.695 21.9053 21.7997 21.8006C21.9043 21.696 21.9873 21.5717 22.044 21.435C22.1006 21.2983 22.1298 21.1517 22.1298 21.0037C22.1298 20.8557 22.1006 20.7092 22.044 20.5725C21.9873 20.4357 21.9043 20.3115 21.7997 20.2069L21.7959 20.2041ZM4.12499 10.5C4.12499 9.23914 4.49888 8.0066 5.19938 6.95823C5.89987 5.90987 6.89551 5.09277 8.06039 4.61026C9.22527 4.12775 10.5071 4.00151 11.7437 4.24749C12.9803 4.49347 14.1162 5.10063 15.0078 5.99219C15.8994 6.88375 16.5065 8.01966 16.7525 9.25629C16.9985 10.4929 16.8722 11.7747 16.3897 12.9396C15.9072 14.1045 15.0901 15.1001 14.0418 15.8006C12.9934 16.5011 11.7608 16.875 10.5 16.875C8.80977 16.8733 7.18927 16.201 5.99411 15.0059C4.79894 13.8107 4.12673 12.1902 4.12499 10.5Z" fill="black" fill-opacity="0.4" style="fill:black;fill-opacity:0.4;"/>
-                <!-- Fin du chemin de l'icône de recherche -->
             </svg>
-            <!-- Paragraphe avec un message de recherche de produits -->
-            <p id="message">Search for products...</p>
-
-            <!-- Début de l'élément SVG pour l'icône de recherche -->
+            <p  id="message">Search for products...</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <!-- Le chemin de l'icône de recherche est défini ici -->
                 <path d="M21.7959 20.2041L17.3437 15.75C18.6787 14.0104 19.3019 11.8282 19.087 9.64606C18.8722 7.46389 17.8353 5.44515 16.1867 3.99936C14.5382 2.55356 12.4014 1.78898 10.2098 1.8607C8.01829 1.93243 5.93607 2.83509 4.38558 4.38558C2.83509 5.93607 1.93243 8.01829 1.8607 10.2098C1.78898 12.4014 2.55356 14.5382 3.99936 16.1867C5.44515 17.8353 7.46389 18.8722 9.64606 19.087C11.8282 19.3019 14.0104 18.6787 15.75 17.3437L20.2059 21.8006C20.3106 21.9053 20.4348 21.9883 20.5715 22.0449C20.7083 22.1015 20.8548 22.1307 21.0028 22.1307C21.1508 22.1307 21.2973 22.1015 21.4341 22.0449C21.5708 21.9883 21.695 21.9053 21.7997 21.8006C21.9043 21.696 21.9873 21.5717 22.044 21.435C22.1006 21.2983 22.1298 21.1517 22.1298 21.0037C22.1298 20.8557 22.1006 20.7092 22.044 20.5725C21.9873 20.4357 21.9043 20.3115 21.7997 20.2069L21.7959 20.2041ZM4.12499 10.5C4.12499 9.23914 4.49888 8.0066 5.19938 6.95823C5.89987 5.90987 6.89551 5.09277 8.06039 4.61026C9.22527 4.12775 10.5071 4.00151 11.7437 4.24749C12.9803 4.49347 14.1162 5.10063 15.0078 5.99219C15.8994 6.88375 16.5065 8.01966 16.7525 9.25629C16.9985 10.4929 16.8722 11.7747 16.3897 12.9396C15.9072 14.1045 15.0901 15.1001 14.0418 15.8006C12.9934 16.5011 11.7608 16.875 10.5 16.875C8.80977 16.8733 7.18927 16.201 5.99411 15.0059C4.79894 13.8107 4.12673 12.1902 4.12499 10.5Z" fill="black" style="fill:black;fill-opacity:1;"/>
             </svg>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M9.375 20.25C9.375 20.6208 9.26503 20.9834 9.059 21.2917C8.85298 21.6 8.56014 21.8404 8.21753 21.9823C7.87492 22.1242 7.49792 22.1613 7.1342 22.089C6.77049 22.0166 6.4364 21.838 6.17417 21.5758C5.91195 21.3136 5.73337 20.9795 5.66103 20.6158C5.58868 20.2521 5.62581 19.8751 5.76773 19.5325C5.90964 19.1899 6.14996 18.897 6.45831 18.691C6.76665 18.485 7.12916 18.375 7.5 18.375C7.99728 18.375 8.47419 18.5725 8.82582 18.9242C9.17745 19.2758 9.375 19.7527 9.375 20.25ZM17.25 18.375C16.8792 18.375 16.5166 18.485 16.2083 18.691C15.9 18.897 15.6596 19.1899 15.5177 19.5325C15.3758 19.8751 15.3387 20.2521 15.411 20.6158C15.4834 20.9795 15.662 21.3136 15.9242 21.5758C16.1864 21.838 16.5205 22.0166 16.8842 22.089C17.2479 22.1613 17.6249 22.1242 17.9675 21.9823C18.3101 21.8404 18.603 21.6 18.809 21.2917C19.015 20.9834 19.125 20.6208 19.125 20.25C19.125 19.7527 18.9275 19.2758 18.5758 18.9242C18.2242 18.5725 17.7473 18.375 17.25 18.375ZM22.0753 7.08094L19.5169 15.3966C19.3535 15.9343 19.0211 16.4051 18.569 16.739C18.1169 17.0729 17.5692 17.2521 17.0072 17.25H7.77469C7.2046 17.2482 6.65046 17.0616 6.1953 16.7183C5.74015 16.3751 5.40848 15.8936 5.25 15.3459L2.04469 4.125H1.125C0.826631 4.125 0.540483 4.00647 0.329505 3.7955C0.118526 3.58452 0 3.29837 0 3C0 2.70163 0.118526 2.41548 0.329505 2.2045C0.540483 1.99353 0.826631 1.875 1.125 1.875H2.32687C2.73407 1.87626 3.12988 2.00951 3.45493 2.25478C3.77998 2.50004 4.01674 2.84409 4.12969 3.23531L4.81312 5.625H21C21.1761 5.62499 21.3497 5.6663 21.5069 5.74561C21.664 5.82492 21.8004 5.94001 21.905 6.08164C22.0096 6.22326 22.0795 6.38746 22.1091 6.56102C22.1387 6.73458 22.1271 6.91266 22.0753 7.08094ZM19.4766 7.875H5.45531L7.41375 14.7281C7.43617 14.8065 7.48354 14.8755 7.54867 14.9245C7.6138 14.9736 7.69315 15.0001 7.77469 15H17.0072C17.0875 15.0002 17.1656 14.9746 17.2303 14.927C17.2949 14.8794 17.3426 14.8123 17.3662 14.7356L19.4766 7.875Z" fill="black" style="fill:black;fill-opacity:1;"/>
+                <path d="M9.375 20.25C9.375 20.6208 9.26503 20.9834 9.059 21.2917C8.85298 21.6 8.56014 21.8404 8.21753 21.9823C7.87492 22.1242 7.49792 22.1613 7.1342 22.089C6.77049 22.0166 6.4364 21.838 6.17417 21.5758C5.91195 21.3136 5.73337 20.9795 5.66103 20.6158C5.58868 20.2521 5.62581 19.8751 5.76773 19.5325C5.90964 19.1899 6.14996 18.897 6.45831 18.691C6.76665 18.485 7.12916 18.375 7.5 18.375C7.99728 18.375 8.47419 18.5725 8.82582 18.9242C9.17745 19.2758 9.375 19.7527 9.375 20.25ZM17.25 18.375C16.8792 18.375 16.5166 18.485 16.2083 18.691C15.9 18.897 15.6596 19.1899 15.5177 19.5325C15.3758 19.8751 15.3387 20.2521 15.411 20.6158C15.4834 20.9795 15.662 21.3136 15.9242 21.5758C16.1864 21.838 16.5205 22.0166 16.8842 22.089C17.2479 22.1613 17.6249 22.1242 17.9675 21.9823C18.3101 21.8404 18.603 21.6 18.809 21.2917C19.015 20.9834 19.125 20.6208 19.125 20.25C19.125 19.7527 18.9275 19.2758 18.5758 18.9242C18.2242 18.5725 17.7473 18.375 17.25 18.375ZM22.0753 7.08094L19.5169 15.3966C19.3535 15.9343 19.0211 16.4051 18.569 16.739C18.1169 17.0729 17.5692 17.2521 17.0072 17.25H7.77469C7.2046 17.2482 6.65046 17.0616 6.1953 16.7183C5.74015 16.3751 5.40848 15.8936 5.25 15.3459L2.04469 4.125H1.125C0.826631 4.125 0.540483 4.00647 0.329505 3.7955C0.118526 3.58452 0 3.29837 0 3C0 2.70163 0.118526 2.41548 0.329505 2.2045C0.540483 1.99353 0.826631 1.875 1.125 1.875H2.32687C2.73407 1.87626 3.12988 2.00951 3.45493 2.25478C3.77998 2.50004 4.01674 2.84409 4.12969 3.23531L4.81312 5.625H21C21.1761 5.62499 21.3497 5.6663 21.5069 5.74561C21.664 5.82492 21.8004 5.94001 21.905 6.08164C22.0096 6.22326 22.0795 6.38746 22.1091 6.56102C22.1387 6.73458 22.1271 6.91266 22.0753 7.08094ZM19.4766 7.875H5.45531L7.41375 14.7281C7.43617 14.8065 7.48354 14.8755 7.54867 14.9245C7.6138 14.9736 7.69315 15.0001 7.77469 15H17.0072C17.0875 15.0002 17.1656 14.9746 17.2303 14.927C17.2949 14.8794 17.3426 14.8123 17.3662 14.7356L19.4766 7.875Z" fill="black" style="fill:black;fill-opacity:1;"/>
             </svg>
             <svg id="connexion" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M12 1.875C9.99747 1.875 8.0399 2.46882 6.37486 3.58137C4.70981 4.69392 3.41206 6.27523 2.64572 8.12533C1.87939 9.97543 1.67888 12.0112 2.06955 13.9753C2.46023 15.9393 3.42454 17.7435 4.84055 19.1595C6.25656 20.5755 8.06066 21.5398 10.0247 21.9305C11.9888 22.3211 14.0246 22.1206 15.8747 21.3543C17.7248 20.5879 19.3061 19.2902 20.4186 17.6251C21.5312 15.9601 22.125 14.0025 22.125 12C22.122 9.3156 21.0543 6.74199 19.1562 4.84383C17.258 2.94567 14.6844 1.87798 12 1.875ZM7.45969 18.4284C7.98195 17.7143 8.66528 17.1335 9.45418 16.7331C10.2431 16.3327 11.1153 16.124 12 16.124C12.8847 16.124 13.7569 16.3327 14.5458 16.7331C15.3347 17.1335 16.0181 17.7143 16.5403 18.4284C15.2134 19.3695 13.6268 19.875 12 19.875C10.3732 19.875 8.78665 19.3695 7.45969 18.4284ZM9.375 11.25C9.375 10.7308 9.52896 10.2233 9.8174 9.79163C10.1058 9.35995 10.5158 9.0235 10.9955 8.82482C11.4751 8.62614 12.0029 8.57415 12.5121 8.67544C13.0213 8.77672 13.489 9.02673 13.8562 9.39384C14.2233 9.76096 14.4733 10.2287 14.5746 10.7379C14.6759 11.2471 14.6239 11.7749 14.4252 12.2545C14.2265 12.7342 13.8901 13.1442 13.4584 13.4326C13.0267 13.721 12.5192 13.875 12 13.875C11.3038 13.875 10.6361 13.5984 10.1438 13.1062C9.65157 12.6139 9.375 11.9462 9.375 11.25ZM18.1875 16.8694C17.4583 15.9419 16.5289 15.1914 15.4688 14.6737C16.1444 13.9896 16.6026 13.1208 16.7858 12.1769C16.9689 11.2329 16.8688 10.2558 16.498 9.36861C16.1273 8.4814 15.5024 7.72364 14.702 7.19068C13.9017 6.65771 12.9616 6.37334 12 6.37334C11.0384 6.37334 10.0983 6.65771 9.29797 7.19068C8.49762 7.72364 7.87275 8.4814 7.50198 9.36861C7.13121 10.2558 7.0311 11.2329 7.21424 12.1769C7.39739 13.1208 7.85561 13.9896 8.53125 14.6737C7.4711 15.1914 6.54168 15.9419 5.8125 16.8694C4.89661 15.7083 4.32614 14.3129 4.1664 12.8427C4.00665 11.3725 4.2641 9.88711 4.90925 8.55644C5.55441 7.22578 6.5612 6.10366 7.81439 5.31855C9.06757 4.53343 10.5165 4.11703 11.9953 4.11703C13.4741 4.11703 14.9231 4.53343 16.1762 5.31855C17.4294 6.10366 18.4362 7.22578 19.0814 8.55644C19.7265 9.88711 19.984 11.3725 19.8242 12.8427C19.6645 14.3129 19.094 15.7083 18.1781 16.8694H18.1875Z" fill="black" style="fill:black;fill-opacity:1;"/>
+                <path d="M12 1.875C9.99747 1.875 8.0399 2.46882 6.37486 3.58137C4.70981 4.69392 3.41206 6.27523 2.64572 8.12533C1.87939 9.97543 1.67888 12.0112 2.06955 13.9753C2.46023 15.9393 3.42454 17.7435 4.84055 19.1595C6.25656 20.5755 8.06066 21.5398 10.0247 21.9305C11.9888 22.3211 14.0246 22.1206 15.8747 21.3543C17.7248 20.5879 19.3061 19.2902 20.4186 17.6251C21.5312 15.9601 22.125 14.0025 22.125 12C22.122 9.3156 21.0543 6.74199 19.1562 4.84383C17.258 2.94567 14.6844 1.87798 12 1.875ZM7.45969 18.4284C7.98195 17.7143 8.66528 17.1335 9.45418 16.7331C10.2431 16.3327 11.1153 16.124 12 16.124C12.8847 16.124 13.7569 16.3327 14.5458 16.7331C15.3347 17.1335 16.0181 17.7143 16.5403 18.4284C15.2134 19.3695 13.6268 19.875 12 19.875C10.3732 19.875 8.78665 19.3695 7.45969 18.4284ZM9.375 11.25C9.375 10.7308 9.52896 10.2233 9.8174 9.79163C10.1058 9.35995 10.5158 9.0235 10.9955 8.82482C11.4751 8.62614 12.0029 8.57415 12.5121 8.67544C13.0213 8.77672 13.489 9.02673 13.8562 9.39384C14.2233 9.76096 14.4733 10.2287 14.5746 10.7379C14.6759 11.2471 14.6239 11.7749 14.4252 12.2545C14.2265 12.7342 13.8901 13.1442 13.4584 13.4326C13.0267 13.721 12.5192 13.875 12 13.875C11.3038 13.875 10.6361 13.5984 10.1438 13.1062C9.65157 12.6139 9.375 11.9462 9.375 11.25ZM18.1875 16.8694C17.4583 15.9419 16.5289 15.1914 15.4688 14.6737C16.1444 13.9896 16.6026 13.1208 16.7858 12.1769C16.9689 11.2329 16.8688 10.2558 16.498 9.36861C16.1273 8.4814 15.5024 7.72364 14.702 7.19068C13.9017 6.65771 12.9616 6.37334 12 6.37334C11.0384 6.37334 10.0983 6.65771 9.29797 7.19068C8.49762 7.72364 7.87275 8.4814 7.50198 9.36861C7.13121 10.2558 7.0311 11.2329 7.21424 12.1769C7.39739 13.1208 7.85561 13.9896 8.53125 14.6737C7.4711 15.1914 6.54168 15.9419 5.8125 16.8694C4.89661 15.7083 4.32614 14.3129 4.1664 12.8427C4.00665 11.3725 4.2641 9.88711 4.90925 8.55644C5.55441 7.22578 6.5612 6.10366 7.81439 5.31855C9.06757 4.53343 10.5165 4.11703 11.9953 4.11703C13.4741 4.11703 14.9231 4.53343 16.1762 5.31855C17.4294 6.10366 18.4362 7.22578 19.0814 8.55644C19.7265 9.88711 19.984 11.3725 19.8242 12.8427C19.6645 14.3129 19.094 15.7083 18.1781 16.8694H18.1875Z" fill="black" style="fill:black;fill-opacity:1;"/>
             </svg>
         </div>
     </div>
     </header>
     <main>
-        <!-- Une div pour la barre -->
-        <div class="barre"></div>
-        
-        <!-- Section principale du contenu -->
-        <section class="content">
-        
-            <!-- Conteneur pour les images -->
-            <div class="images"> 
+    <div class="barre"></div>
+    <div class="content">
+        <div class="images"> 
+            <div class="images_vertical">
+                <img id="with_border" src="/Int-gration-HTML-CSS-E-commerce/eshopping/images/small_tshirt_1.png" alt="image1">
+                <img src="/Int-gration-HTML-CSS-E-commerce/eshopping/images/small_tshirt_2.png" alt="image2">
+                <img src="/Int-gration-HTML-CSS-E-commerce/eshopping/images/small_tshirt_3.png" alt="image3">  
+            </div>
+            <div class="images_horizontal">
+                <img src="/Int-gration-HTML-CSS-E-commerce/eshopping/images/large_tshirt_1.png" alt="image4">
+            </div>
+        </div>
+        <div class="description">
+            <h1>One Life Graphic T-shirt</h1>
+            <div class="notes">   
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                    <path d="M12.3562 0L15.8569 7.53796L24.1077 8.53794L18.0204 14.1966L19.619 22.3526L12.3562 18.3119L5.09341 22.3526L6.69201 14.1966L0.604756 8.53794L8.85555 7.53796L12.3562 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                    <path d="M12.3562 0L15.8569 7.53796L24.1077 8.53794L18.0204 14.1966L19.619 22.3526L12.3562 18.3119L5.09341 22.3526L6.69201 14.1966L0.604756 8.53794L8.85555 7.53796L12.3562 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                    <path d="M12.3562 0L15.8569 7.53796L24.1077 8.53794L18.0204 14.1966L19.619 22.3526L12.3562 18.3119L5.09341 22.3526L6.69201 14.1966L0.604756 8.53794L8.85555 7.53796L12.3562 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>   
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                    <path d="M12.3562 0L15.8569 7.53796L24.1077 8.53794L18.0204 14.1966L19.619 22.3526L12.3562 18.3119L5.09341 22.3526L6.69201 14.1966L0.604756 8.53794L8.85555 7.53796L12.3562 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="23" viewBox="0 0 12 23" fill="none">
+                    <path d="M4.73719 22.3526L12 18.3119V0L8.49932 7.53796L0.248535 8.53793L6.33579 14.1966L4.73719 22.3526Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+                </svg>
+                <p>4.5/5</p> 
+            </div>
+            <div class="price">
+                <p>$260</p>
+                <p id="price_bef">$300</p>
+            </div>
             
-                <!-- Conteneur pour les images verticales -->
-                <div class="images_vertical">
-                
-                    <!-- Image avec une bordure -->
-                    <img id="with_border" src="/eshopping/images/small_tshirt_1.png" alt="image1">
-                    
-                    <!-- Deuxième image -->
-                    <img src="/eshopping/images/small_tshirt_2.png" alt="image2">
-                    
-                    <!-- Troisième image -->
-                    <img src="/eshopping/images/small_tshirt_3.png" alt="image3">  
-                </div>
-                
-                <!-- Conteneur pour les images horizontales -->
-                <div class="images_horizontal">
-                
-                    <!-- Première image horizontale -->
-                    <img src="/eshopping/images/large_tshirt_1.png" alt="image4">
-                </div>
-            </div>
-        </section>
-    </main>
-            <div class="description">
-                <!-- Titre du produit -->
-                <h1>One Life Graphic T-shirt</h1>
-                
-                <!-- Conteneur pour les notes du produit -->
-                <div class="notes">   
-                    <!-- Étoile de notation complète -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
-                        <path d="M12.3562 0L15.8569 7.53796L24.1077 8.53794L18.0204 14.1966L19.619 22.3526L12.3562 18.3119L5.09341 22.3526L6.69201 14.1966L0.604756 8.53794L8.85555 7.53796L12.3562 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg>
-                    <!-- Étoile de notation complète -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
-                        <path d="M12.3562 0L15.8569 7.53796L24.1077 8.53794L18.0204 14.1966L19.619 22.3526L12.3562 18.3119L5.09341 22.3526L6.69201 14.1966L0.604756 8.53794L8.85555 7.53796L12.3562 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg>
-                    <!-- Étoile de notation complète -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
-                        <path d="M12.3562 0L15.8569 7.53796L24.1077 8.53794L18.0204 14.1966L19.619 22.3526L12.3562 18.3119L5.09341 22.3526L6.69201 14.1966L0.604756 8.53794L8.85555 7.53796L12.3562 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>   
-                    </svg>
-                    <!-- Étoile de notation complète -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
-                        <path d="M12.3562 0L15.8569 7.53796L24.1077 8.53794L18.0204 14.1966L19.619 22.3526L12.3562 18.3119L5.09341 22.3526L6.69201 14.1966L0.604756 8.53794L8.85555 7.53796L12.3562 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg>
-                    <!-- Étoile de notation à moitié remplie -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="23" viewBox="0 0 12 23" fill="none">
-                        <path d="M4.73719 22.3526L12 18.3119V0L8.49932 7.53796L0.248535 8.53793L6.33579 14.1966L4.73719 22.3526Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg>
-                    <!-- Note du produit -->
-                    <p>4.5/5</p> 
-                </div>
-            </div>
-                <!-- Conteneur pour le prix du produit -->
-                <div class="price">
-                    <!-- Prix actuel du produit -->
-                    <p>$260</p>
-                    <!-- Prix avant réduction du produit -->
-                    <p id="price_bef">$300</p>
-                </div>     
-
-                <!-- Conteneur pour le sélecteur de taille -->
-                <div class="size-selector">
-                    <!-- Description du produit -->
-                    <p id="descript">This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
-                    <!-- Ligne de séparation -->
-                    <hr />
-                    <!-- Instruction pour sélectionner les couleurs -->
-                    <p>Select Colors</p>
-                    <!-- Groupe de boutons pour la sélection des couleurs -->
-                    <div class="button-group">
-                        <!-- Bouton de couleur 1 -->
-                        <div class="ellipse" id="ellipse1">
-                            <!-- Cadre pour la coche de sélection -->
-                            <div class="checkmark-frame"></div>
-                        </div>
-                        <!-- Bouton de couleur 2 -->
-                        <div class="ellipse" id="ellipse2"></div>
-                        <!-- Bouton de couleur 3 -->
-                        <div class="ellipse" id="ellipse3"></div>
-                    </div>  
-                </div>
-                <!-- Ligne de séparation -->
+            <div class="size-selector">
+                <p id="descript">This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
                 <hr />
-                <!-- Conteneur pour le sélecteur de taille -->
-                <div class="size-selector">
-                    <!-- Instruction pour choisir la taille -->
-                    <p>Choose Size</p>
-                    <!-- Groupe de boutons pour la sélection de la taille -->
-                    <div class="button-group">
-                        <!-- Bouton pour la taille Small -->
-                        <button class="size-button">Small</button>
-                        <!-- Bouton pour la taille Medium -->
-                        <button class="size-button">Medium</button>
-                        <!-- Bouton pour la taille Large -->
-                        <button class="size-button">Large</button>
-                        <!-- Bouton pour la taille X-large -->
-                        <button class="size-button">X-large</button>
+                <p>Select Colors</p>
+                <div class="button-group">
+                    <div class="ellipse" id="ellipse1">
+                        <div class="checkmark-frame"></div>
                     </div>
-                </div>
-                <!-- Une autre barre/division -->
-                <div class="barre2"></div>
-                <!-- Conteneur pour l'achat -->
-                <div class="buy">
-                    <!-- Sélecteur de quantité -->
-                    <div class="quantity-selector">
-                        <!-- Bouton pour diminuer la quantité -->
-                        <button >-</button>
-                        <!-- Affichage de la quantité actuelle -->
-                        <p >1</p>
-                        <!-- Bouton pour augmenter la quantité -->
-                        <button >+</button>
-                    </div>
-                    <!-- Bouton pour ajouter au panier -->
-                    <div class="add">
-                        <button >Add to Carte</button>
-                    </div>
-                </div>         
-                <!-- Fin du conteneur principal -->
-                </div>
-                <!-- Fin de la section principale -->
-                </section>
-            <!-- Conteneur pour la barre de revue -->
-            <div class="reviewbar">
-                <!-- Titre pour toutes les revues -->
-                <h1>All Reviews</h1>
-                <!-- Bouton pour écrire une revue -->
-                <button>Write a Review</button>
+                    <div class="ellipse" id="ellipse2"></div>
+                    <div class="ellipse" id="ellipse3"></div>
+                </div>  
             </div>
-            <!-- Section pour toutes les revues -->
-            <section class="allreview">
-                <!-- Conteneur pour la notation -->
-                <div class="rating-container">
-                    <!-- Notation par étoiles -->
-                    <div class="star-rating">
-                        <!-- Étoile de notation -->
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                                <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                            </svg>
-                        </span>
-                        <!-- Étoile de notation -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                        <!-- Étoile de notation -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                        <!-- Étoile de notation -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                        <!-- Étoile de notation -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21" fill="none">
-                        <path d="M4.36421 20.4229L11 16.731V0L7.80155 6.8872L0.263062 7.80085L5.8248 12.971L4.36421 20.4229Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                        </svg>;</span>
-                <!-- Fin du conteneur de notation par étoiles -->
+            <hr />
+            <div class="size-selector">
+                <p>Choose Size</p>
+                <div class="button-group">
+                    <button class="size-button">Small</button>
+                    <button class="size-button">Medium</button>
+                    <button class="size-button">Large</button>
+                    <button class="size-button">X-large</button>
                 </div>
-                <!-- Conteneur pour une revue -->
-                <div class="review">
+            </div>
+            <div class="barre2"></div>
+            <div class="buy">
+                <div class="quantity-selector">
+                    <button >-</button>
+                    <p >1</p>
+                    <button >+</button>
                 </div>
-                <!-- Titre de l'avis, généralement le nom de l'utilisateur -->
-                <p class="titre-avis">Samantha D.</p>
-                <!-- Texte de l'avis -->
-                <p class="avis"> "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</p>
-                <!-- Date de publication de l'avis -->
-                <p class="date-posted">Posted on August 14, 2023</p>
-                <!-- Fin du conteneur de revue -->
+                <div class="add">
+                    <button >Add to Carte</button>
                 </div>
-                <!-- Conteneur pour la notation -->
-                <div class="rating-container">
-                <!-- Notation par étoiles -->
-                <div class="star-rating">
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                <!-- Fin du conteneur de notation par étoiles -->
-                </div>
-                <!-- Titre de l'avis, généralement le nom de l'utilisateur -->
-                <p class="titre-avis">Alex M.</p>
-                <!-- Texte de l'avis -->
-                <p class="avis"> "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."</p>
-                <!-- Date de publication de l'avis -->
-                <p class="date-posted">Posted on August 15, 2023</p>
-                <!-- Fin du conteneur de revue -->
-                </div>
-                <!-- Conteneur pour la notation -->
-                <div class="rating-container">
-                <!-- Notation par étoiles -->
-                <div class="star-rating">
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21" fill="none">
-                        <path d="M4.36421 20.4229L11 16.731V0L7.80155 6.8872L0.263062 7.80085L5.8248 12.971L4.36421 20.4229Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                        </svg>;</span>
-                <!-- Fin du conteneur de notation par étoiles -->
-                </div>
-                <!-- Titre de l'avis, généralement le nom de l'utilisateur -->
-                <p class="titre-avis">Ethan R.</p>
-                <!-- Texte de l'avis -->
-                <p class="avis"> "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."</p>
-                <!-- Date de publication de l'avis -->
-                <p class="date-posted">Posted on August 16, 2023</p>
-                <!-- Fin du conteneur de revue -->
-                </div>
-                <!-- Conteneur pour la notation -->
-                <div class="rating-container">
-                <!-- Notation par étoiles -->
-                <div class="star-rating">
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                <!-- Fin du conteneur de notation par étoiles -->
-                </div>
-                <!-- Titre de l'avis, généralement le nom de l'utilisateur -->
-                <p class="titre-avis">Olivia P.</p>
-                <!-- Texte de l'avis -->
-                <p class="avis"> "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out."</p>
-                <!-- Date de publication de l'avis -->
-                <p class="date-posted">Posted on August 17, 2023</p>
-                <!-- Fin du conteneur de revue -->
-                </div>
-                <!-- Conteneur pour la notation -->
-                <div class="rating-container">
-                <!-- Notation par étoiles -->
-                <div class="star-rating">
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
+            </div>         
+        </div>
+    </div>
+<div class="reviewbar">
+    <h1>All Reviews</h1>
+    <button>Write a Review</button>
+</div>
+<div class="allreview">
+    <div class="rating-container">
+        <div class="star-rating">
 
-                <!-- Fin du conteneur de notation par étoiles -->
-                </div>
-                <!-- Titre de l'avis, généralement le nom de l'utilisateur -->
-                <p class="titre-avis">Liam K.</p>
-                <!-- Texte de l'avis -->
-                <p class="avis">"This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."</p>
-                <!-- Date de publication de l'avis -->
-                <p class="date-posted">Posted on August 18, 2023</p>
-                <!-- Fin du conteneur de revue -->
-                </div>
-                <!-- Conteneur pour la notation -->
-                <div class="rating-container">
-                <!-- Notation par étoiles -->
-                <div class="star-rating">
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
-                    <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                    </svg></span>
-                     <!-- Notation par étoiles -->
-                    <span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21" fill="none">
-                        <path d="M4.36421 20.4229L11 16.731V0L7.80155 6.8872L0.263062 7.80085L5.8248 12.971L4.36421 20.4229Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
-                        </svg>;</span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
 
-                <!-- Fin du conteneur de notation par étoiles -->
-                </div>
-                <!-- Titre de l'avis, généralement le nom de l'utilisateur -->
-                <p class="titre-avis">Ava H.</p>
-                <!-- Texte de l'avis -->
-                <p class="avis">"I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter."</p>
-                <!-- Date de publication de l'avis -->
-                <p class="date-posted">Posted on August 19, 2023</p>
-                <!-- Fin du conteneur de revue -->
-                </div>
-                <!-- Fin de la section pour toutes les revues -->
-                </section>
-                <!-- Fin du contenu principal -->
-                </main>
-                <!-- Fin du corps du document -->
-                </body>
-                <!-- Fin du document HTML -->
-                </html>
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21" fill="none">
+                <path d="M4.36421 20.4229L11 16.731V0L7.80155 6.8872L0.263062 7.80085L5.8248 12.971L4.36421 20.4229Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+                </svg>;</span>
+
+        </div>
+        <div class="review">
+
+        </div>
+        <p class="titre-avis">Samantha D.</p>
+        <p class="avis"> "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."</p>
+        <p class="date-posted">Posted on August 14, 2023</p>
+    </div>
+    <div class="rating-container">
+        <div class="star-rating">
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+        </div>
+        <p class="titre-avis">Alex M.</p>
+        <p class="avis"> "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."</p>
+        <p class="date-posted">Posted on August 15, 2023</p>
+    </div>
+    <div class="rating-container">
+        <div class="star-rating">
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21" fill="none">
+                <path d="M4.36421 20.4229L11 16.731V0L7.80155 6.8872L0.263062 7.80085L5.8248 12.971L4.36421 20.4229Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+                </svg>;</span>
+
+        </div>
+        <p class="titre-avis">Ethan R.</p>
+        <p class="avis"> "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."</p>
+        <p class="date-posted">Posted on August 16, 2023</p>
+    </div>
+    <div class="rating-container">
+        <div class="star-rating">
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+        </div>
+        <p class="titre-avis">Olivia P.</p>
+        <p class="avis"> "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out."</p>
+        <p class="date-posted">Posted on August 17, 2023</p>
+    </div>
+    <div class="rating-container">
+        <div class="star-rating">
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+        </div>
+        <p class="titre-avis">Liam K.</p>
+        <p class="avis">"This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."</p>
+        <p class="date-posted">Posted on August 18, 2023</p>
+    </div>
+    <div class="rating-container">
+        <div class="star-rating">
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 23 21" fill="none">
+            <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+            </svg></span>
+
+            <span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21" fill="none">
+                <path d="M4.36421 20.4229L11 16.731V0L7.80155 6.8872L0.263062 7.80085L5.8248 12.971L4.36421 20.4229Z" fill="#FFC633" style="fill:#FFC633;fill:color(display-p3 1.0000 0.7760 0.2000);fill-opacity:1;"/>
+                </svg>;</span>
+
+        </div>
+        <p class="titre-avis">Ava H.</p>
+        <p class="avis">"I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter."</p>
+        <p class="date-posted">Posted on August 19, 2023</p>
+    </div>
+    </main>
+    </body>
+</html>
