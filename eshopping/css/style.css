@@ -1,7 +1,7 @@
-@import url(https://github.com/googlefonts/alex-brush); /*import police */
+@import url(https://github.com/googlefonts/alex-brush); /*import a new police */
 
 /*Define the features of the page and for some markers*/
-body{
+body{ 
     margin-left: 7%;
     margin-right: 7%;
     max-width: 100%;
@@ -23,8 +23,12 @@ img{
     height: auto;
 }
 
-/*Features of the header*/
-.header{
+/*-----------------------------------*/
+
+
+/*Define the features of the header*/
+
+.header{ 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,8 +51,8 @@ img{
     display: none;
 }
 
-/*Features of the Search bar*/
-.Search{
+
+.Search{ /*Features of the Search bar*/
     border-radius: 62px;
     background: #F0F0F0;
     justify-content: space-between;
@@ -70,8 +74,12 @@ img{
     margin-right: 1%;
 }
 
-/*Define the feature for the images*/
-.images{
+/*-----------------------------------*/
+
+
+/*Define the feature for the images and the description of the product*/
+
+.images{ 
     display: flex;
     gap: 2%;
     width: auto;
@@ -91,13 +99,13 @@ img{
 
 .images_vertical{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Make the images display vertically */
     align-items: center;
     gap: 2%;
 }
 
 .images_vertical img{
-    border-radius: 20px;
+    border-radius: 20px; /* Rounded corners */
 }
 
 .images_vertical img:hover{
@@ -113,16 +121,17 @@ img{
     display: flex;
     justify-content: space-between;
     gap: 2%;
- }
+}
  
- .description{
+.description{
      display: flex;
      flex-direction: column;
- }
+}
  
- .description h1{
-     margin: 0;
- }
+.description h1{
+    margin: 0;
+    font-size: 32px;
+}
 
 .size-selector {
     display: flex;
@@ -138,9 +147,7 @@ img{
     font-weight: 900;
 }
 
-/*Define the features of the color choice buttons*/
-
-.ellipse {
+.ellipse { /*Define the features of the color choice buttons*/
   width: 37px;
   height: 37px;
   border-radius: 50%;
@@ -151,20 +158,20 @@ img{
 }
 
 #ellipse1 {
-  background-color: rgba(79,70,49,1);
+  background-color: rgba(79,70,49,1); /* Color 1 */
   position: relative;
 }
 
 #ellipse2 {
-  background-color: rgba(49, 79, 73, 1);
+  background-color: rgba(49, 79, 73, 1); /* Color 2 */
 }
 
 #ellipse3 {
-  background-color: rgba(49, 52, 79, 1);
+  background-color: rgba(49, 52, 79, 1); /* Color 3 */
   margin-right: 0;
 }
 
-.checkmark-frame {
+.checkmark-frame { 
   width: 16px;
   height: 16px;
   position: absolute;
@@ -182,7 +189,7 @@ img{
     height: 16px;
 }
 
-.size-button{
+.size-button{ /*Define the features of the size choice button*/
     display: flex;
     border-radius: 20px;
     text-decoration: none;
@@ -196,18 +203,10 @@ img{
     font-family: "Alex Brush", cursive;
 }
 
-/*Animation on the size button*/
-.size-button:hover{
+.size-button:hover{ /*Animation on the size button*/
     background: #1F59ED;
     color: white;
     cursor: pointer;
-
-}
-
-#price_bef{
-    color: rgba(0, 0, 0, 0.30);
-    color: color(display-p3 0 0 0 / 0.30);
-    text-decoration-line: line-through;
 }
 
 .price{
@@ -222,6 +221,12 @@ img{
     line-height: normal;
 }
 
+#price_bef{
+    color: rgba(0, 0, 0, 0.30);
+    color: color(display-p3 0 0 0 / 0.30);
+    text-decoration-line: line-through; /* Add a line through the former price */
+}
+
 .notes{
     display: flex;
     align-items: center;
@@ -230,7 +235,6 @@ img{
     gap: 1%;
 }
 
-
 .quantity-selector {
     background: color(display-p3 0.94 0.94 0.94);
     padding: 1px 6%;
@@ -238,8 +242,7 @@ img{
     gap: 25px ;
     width: 100px;
     display: flex;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .quantity-selector button {
@@ -250,8 +253,7 @@ img{
     font-weight: 700;
 }
 
-/*Define the features of the add to cart button*/
-.add {
+.add { /*Define the features of the add to cart button*/
     display: flex;
     width: auto;
     height: 52px;
@@ -275,7 +277,7 @@ img{
 }
  
 #add-to-cart-button button:hover {
-    opacity: 0.9;
+    opacity: 0.9; /* Darken the button a little on hover */
 }
 
 .buy{
@@ -283,8 +285,8 @@ img{
     gap: 2%;
 }
 
-/*Define the style of the barre*/
-.barre{
+
+.barre{ /*Define the style of the barre*/
     width: 100%;
     height: 1px;
     background: rgba(0, 0, 0, 0.10);
@@ -292,7 +294,7 @@ img{
     margin-bottom: 2% ;
 }
 
-.barre2{
+.barre2{ /*Define the style of the barre*/
     width: 100%;
     height: 1px;
     background: rgba(0, 0, 0, 0.10);
@@ -301,9 +303,13 @@ img{
     margin-top: 2%;
 }
 
+/*-----------------------------------*/
+
+/*Define the features of the reviews part*/
+
 .allreview{
     display: grid;
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns:repeat(2, 1fr); /*Display the reviews in 2 columns*/
     gap: 2%;
 }
 
@@ -319,8 +325,7 @@ img{
 
 .reviewbar h1{
     font-weight: 700;
-    width: auto;
-    
+    width: auto;  
 }
 
 .reviewbar button{
@@ -335,12 +340,10 @@ img{
     border: none;
     font-size: 16px;
     font-weight: 700;
-    font-family: "Alex Brush", cursive;
-    
+    font-family: "Alex Brush", cursive;   
 }
 
-/*Define the style for the notice part*/
-.rating-container {
+.rating-container { /*Define the style for the notice part*/
     display: flex;
     width: auto;
     padding: 28px 16px;
@@ -350,7 +353,7 @@ img{
     flex-wrap: wrap;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.10);
-    border: 1px solid color(display-p3 0 0 0 / 0.10);
+    border: 1px solid color(display-p3 0 0 0 / 0.10); 
     align-items: center;
 }
 
@@ -384,15 +387,19 @@ img{
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px; 
-    
+    line-height: 22px;    
 }
 
-/*Define new style for the smartphone screen*/
-@media (max-width: 767px) {
+/*-----------------------------------*/
 
+
+/*Define a new style for the smartphones screen*/
+
+@media (max-width: 767px) {
+    
     /*Define the features of the page and for some markers*/
-    body{
+
+    body{ 
         align-items: center; /*align the elements on the center of the page*/
         align-content: center;
         flex-wrap: wrap;
@@ -400,6 +407,7 @@ img{
         margin-left: 10%;
         margin-right: 10%;
     }
+
     img{
         max-width: 100%;
         height: auto;
@@ -413,6 +421,10 @@ img{
         margin-left: 0%;
     }
 
+    /*-----------------------------------*/
+
+    /*Define the features of the header*/
+
     .header{
         display: flex;
         justify-content: space-between;
@@ -425,17 +437,16 @@ img{
     }
 
     .menu_burger{
-        display: flex;
+        display: flex; /*Display the burger menu*/
         align-items: center;
         gap: 10px;
         font-size: 25px;
     }
 
-    /*Some elements are not displayed on the smartphone screen*/
-    #nodisplay{
+    #nodisplay{ /*Some elements are not displayed on the smartphone screen*/
         display: none;
     }
-    
+
     #message{
         display: none;
     }
@@ -444,8 +455,7 @@ img{
         display: none;
     }
 
-    /*Some elements are only displayed on the smartphone screen*/
-    #burger{
+    #burger{ /*Some elements are only displayed on the smartphone screen*/
         display: flex;
     }
 
@@ -453,18 +463,21 @@ img{
         background-color: white;
     }
 
+    /*-----------------------------------*/
+
+
+    /*Define the features of the images and the description of the product*/
+
     .content{
         flex-wrap: wrap;
         align-items: center;
-
     } 
 
     .description{
         margin-left: 20%;
     }
-
-    /*The images are displayed in a new order*/
-    .images{
+ 
+    .images{ /*The images are displayed in a new order*/
         display: grid;
     }
 
@@ -481,12 +494,12 @@ img{
     .images_horizontal {
         margin-left: auto;
         margin-right: auto;
-        order: 1;
+        order: 1; /*Change the order of the images*/
         width: 85%;
     }
 
     .images_vertical {
-        order: 2;
+        order: 2; /*Change the order of the images*/
         width: 31%;
     } 
 
@@ -514,8 +527,7 @@ img{
         
     } 
 
-    /*Delete the animations*/
-    .images_vertical img:hover{
+    .images_vertical img:hover{ /*Delete the animations*/
         opacity: 1;
         cursor: auto;
     }
@@ -543,13 +555,13 @@ img{
 
     }
 
-    /*Delete the animations*/
-    .size-button:hover{
+    .size-button:hover{ /*Delete the animations*/
         background: #F0F0F0;
         color: black;
         cursor: auto;
         opacity: none;
     }
+
     #with_border{
         border: 1px black solid;
     }
@@ -560,9 +572,14 @@ img{
         font-weight: 400;
     }
 
+    /*-----------------------------------*/
+
+
+    /*Define the features of the reviews part*/
+
     .allreview{
         display: grid;
-        grid-template-columns:repeat(1, 1fr);
+        grid-template-columns:repeat(1, 1fr); /*Display the reviews in 1 column*/
         gap: 2%;
     }
 
@@ -588,21 +605,32 @@ img{
         font-weight: 700;
     }
 
+    /*-----------------------------------*/
+
 }
 
-
 /*Define new style for the tablet screen*/
-@media (max-width: 1100px) {
-    /*Define the features of the page and for some markers*/
-    body{
+
+@media (max-width: 1100px) { 
+
+    /*Define the features of the body*/
+
+    body{ 
         align-items: center;
         align-content: center;
         flex-wrap: wrap;
         width: auto;
         justify-content: center;
     }
+
+    /*-----------------------------------*/
+
+    /*Define the features of the content*/
+
     .content{
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    /*-----------------------------------*/
 }
